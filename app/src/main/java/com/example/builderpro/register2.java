@@ -50,9 +50,8 @@ public class register2 extends AppCompatActivity {
         progressDialog.setCancelable(false);
 
         btnSignW.setOnClickListener(v -> {
-            finish();
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
         });
-
         btnSignU.setOnClickListener(v -> {
             if ((editName.getText().length() > 0 && editEmail.getText().length() > 0 && editPassword.getText().length()>0)) {
                 if (editPassword.getText().toString().equals(editRepass.getText().toString())) {
@@ -88,9 +87,9 @@ public class register2 extends AppCompatActivity {
 
     }
 
-//    private void reload() {
-//        startActivity(new Intent(getApplicationContext(), MainActivity.class));
-//    }
+    private void reload() {
+       startActivity(new Intent(getApplicationContext(), MainActivity.class));
+   }
 
 //    @Override
 //    public void onStart() {
