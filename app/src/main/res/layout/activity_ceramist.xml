@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    tools:context=".activities.fragment.Ceramist">
+
+    <ImageButton
+        android:id="@+id/imageView23"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#AFB5BD"
+        android:onClick="set"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014"
+        app:srcCompat="@drawable/setting5" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="408dp"
+        android:layout_height="267dp"
+        android:background="#40586F92"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="202dp"
+        android:layout_height="41dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text=" Schedule"
+        android:textColor="#586F92"
+        android:textSize="25dp"
+        android:inputType="textCapWords"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="57dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Monday  01 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="62dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Tuesday  02 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Wednesday  03 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="62dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Thursday  04 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="46dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Friday  05 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Saturday  06 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Sunday  07 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Monday  08 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Tuesdsay  09 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Wednesday  10 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Thurday 11 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Friday  12 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Saturday  13 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Sunday  14 Oct"
+                android:textColor="#586F92"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:onClick="Cer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437"
+        app:srcCompat="@drawable/mainframe" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Tersedia"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="85dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="550.000/Hari"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="01 Oct 2022"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Tukang Keramik"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:onClick="Cer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604"
+        app:srcCompat="@drawable/mainframe" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Tersedia"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.586" />
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="85dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="550.000/Hari"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="01 Oct 2022"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Tukang Keramik"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:onClick="Cer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772"
+        app:srcCompat="@drawable/mainframe" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Tersedia"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="85dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="550.000/Hari"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="01 Oct 2022"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.768" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Tukang Keramik"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718" />
+
+    <ImageButton
+        android:id="@+id/imageButton37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:onClick="Cer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946"
+        app:srcCompat="@drawable/mainframe" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Tersedia"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="85dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="550.000/Hari"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="01 Oct 2022"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.933" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Tukang Keramik"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

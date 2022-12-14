@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    tools:context=".RiwayatTransaksi">
+
+    <ImageView
+        android:id="@+id/imageView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView61"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557"
+        app:srcCompat="@drawable/linebold" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="415dp"
+        android:layout_height="191dp"
+        android:background="#40586F92"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="225dp"
+        android:layout_height="39dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Riwayat Transaksi"
+        android:textColor="#586F92"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="212dp"
+        android:layout_height="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal|top"
+        android:text="Menunggu Pembayaran"
+        android:textColor="#586F92"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289" />
+
+    <ImageView
+        android:id="@+id/imageView61"
+        android:layout_width="346dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:srcCompat="@drawable/kolomhistory" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView61"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415"
+        app:srcCompat="@drawable/linebold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="103dp"
+        android:layout_height="26dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal|top"
+        android:text="Tukang Cat"
+        android:textColor="#586F92"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="117dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal|top"
+        android:text="Rp 500.000,-"
+        android:textColor="#586F92"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="183dp"
+        android:layout_height="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal|top"
+        android:text="09 November 2022 17.00"
+        android:textColor="#586F92"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396" />
+
+    <ImageView
+        android:id="@+id/imageView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView61"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="@+id/imageView61"
+        app:layout_constraintTop_toTopOf="@+id/imageView61"
+        app:srcCompat="@drawable/next5" />
+
+    <ImageView
+        android:id="@+id/imageView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView61"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="@+id/imageView61"
+        app:layout_constraintTop_toTopOf="@+id/imageView61"
+        app:srcCompat="@drawable/dompet5" />
+
+    <ImageView
+        android:id="@+id/imageView62"
+        android:layout_width="346dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:srcCompat="@drawable/kolomhistory" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView61"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.634"
+        app:srcCompat="@drawable/linebold" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="103dp"
+        android:layout_height="26dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal|top"
+        android:text="Tukang Cor"
+        android:textColor="#586F92"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="117dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal|top"
+        android:text="Rp 500.000,-"
+        android:textColor="#586F92"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="183dp"
+        android:layout_height="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal|top"
+        android:text="09 November 2022 17.00"
+        android:textColor="#586F92"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543" />
+
+    <ImageView
+        android:id="@+id/imageView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView61"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="@+id/imageView61"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:srcCompat="@drawable/next5" />
+
+    <ImageView
+        android:id="@+id/imageView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView61"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="@+id/imageView61"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:srcCompat="@drawable/dompet5" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="82dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal|top"
+        android:text="Selesai"
+        android:textColor="#586F92"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <ImageView
+        android:id="@+id/imageView622"
+        android:layout_width="346dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="304dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:srcCompat="@drawable/kolomhistory" />
+
+    <ImageView
+        android:id="@+id/imageView433"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView61"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/linebold" />
+
+    <TextView
+        android:id="@+id/textView223"
+        android:layout_width="134dp"
+        android:layout_height="19dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal|top"
+        android:text="Tukang Keramik"
+        android:textColor="#586F92"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.713" />
+
+    <TextView
+        android:id="@+id/textView323"
+        android:layout_width="102dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal|top"
+        android:text="Rp 500.000,-"
+        android:textColor="#586F92"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772" />
+
+    <TextView
+        android:id="@+id/textView434"
+        android:layout_width="183dp"
+        android:layout_height="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal|top"
+        android:text="09 November 2022 17.00"
+        android:textColor="#586F92"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.743" />
+
+    <ImageView
+        android:id="@+id/imageView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="328dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView61"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="@+id/imageView61"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:srcCompat="@drawable/next5" />
+
+    <ImageView
+        android:id="@+id/imageView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="328dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView61"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="@+id/imageView61"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:srcCompat="@drawable/dompet5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

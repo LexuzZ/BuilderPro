@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    tools:context=".activities.fragment.Etc">
+
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="408dp"
+        android:layout_height="267dp"
+        android:background="#40586F92"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageView23"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#AFB5BD"
+        android:onClick="set"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014"
+        app:srcCompat="@drawable/setting5" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="202dp"
+        android:layout_height="41dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text=" Schedule"
+        android:textColor="#586F92"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:onClick="etc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437"
+        app:srcCompat="@drawable/mainframe" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:onClick="etc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.593"
+        app:srcCompat="@drawable/mainframe" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Tersedia"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="85dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="550.000/Hari"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="01 Oct 2022"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Tukang Cat"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Tersedia"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="85dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="550.000/Hari"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="01 Oct 2022"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Tukang Keramik"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:onClick="etc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/mainframe" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Tersedia"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="85dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="550.000/Hari"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="01 Oct 2022"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Tukang Genteng"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:onClick="etc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.906"
+        app:srcCompat="@drawable/mainframe" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Tersedia"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.856" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="85dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="550.000/Hari"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="01 Oct 2022"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Tukang Cor"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="37dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Monday"
+                android:textColor="#586F92"
+                android:textSize="10dp" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="37dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Tuesday"
+                android:backgroundTint="#ffffff"
+                android:textColor="#586F92"
+                android:textSize="10dp" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="37dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Wednesday"
+                android:backgroundTint="#ffffff"
+                android:textColor="#586F92"
+                android:textSize="10dp" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="37dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Thursday "
+                android:backgroundTint="#ffffff"
+                android:textColor="#586F92"
+                android:textSize="10dp" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="37dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Friday"
+                android:backgroundTint="#ffffff"
+                android:textColor="#586F92"
+                android:textSize="10dp" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="37dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Saturday  "
+                android:backgroundTint="#ffffff"
+                android:textColor="#586F92"
+                android:textSize="10dp" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="37dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Sunday "
+                android:backgroundTint="#ffffff"
+                android:textColor="#586F92"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
