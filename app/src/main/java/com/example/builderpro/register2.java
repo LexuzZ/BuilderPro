@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class register2 extends AppCompatActivity {
-    private EditText editName, editAlamat, editKota, editProv, editKodepos, editPhonenum, editEmail, editPassword, editRepass;
+    private EditText editName,  editEmail, editPassword, editRepass;
     private Button btnSignU, btnSignW;
     private ProgressDialog progressDialog;
     private AuthenticationDataSource authenticationRemoteDataSource;
@@ -38,11 +38,6 @@ public class register2 extends AppCompatActivity {
         authenticationRepository = new AuthenticationRepository(authenticationRemoteDataSource);
 
         editName = findViewById(R.id.name);
-        editAlamat = findViewById(R.id.alamat);
-        editKota = findViewById(R.id.kota);
-        editProv = findViewById(R.id.prov);
-        editKodepos = findViewById(R.id.kodepos);
-        editPhonenum = findViewById(R.id.phonenum);
         editEmail = findViewById(R.id.email);
         editPassword = findViewById(R.id.password);
         editRepass = findViewById(R.id.repass);
@@ -59,12 +54,10 @@ public class register2 extends AppCompatActivity {
         });
 
         btnSignU.setOnClickListener(v -> {
-            if ((editName.getText().length() > 0 && editAlamat.getText().length() > 0 && editKota.getText().length() > 0 &&
-                    editProv.getText().length() > 0 && editKodepos.getText().length() > 0 && editPhonenum.getText().length() > 0 &&
-                    editEmail.getText().length() > 0 && editPassword.getText().length() > 0 && editRepass.getText().length() > 0)) {
+            if ((editName.getText().length() > 0 && editEmail.getText().length() > 0 && editPassword.getText().length()>0)) {
                 if (editPassword.getText().toString().equals(editRepass.getText().toString())) {
-                    Alamat alamat = new Alamat(editAlamat.getText().toString(), editKota.getText().toString(), editProv.getText().toString(), editKodepos.getText().toString());
-                    User user = new User(editName.getText().toString(), alamat, editPhonenum.getText().toString(), editEmail.getText().toString());
+                    Alamat alamat = new Alamat("", "", "", "");
+                    User user = new User(editName.getText().toString(), alamat, "", editEmail.getText().toString());
                     register(user, editPassword.getText().toString());
             } else {
                 Toast.makeText(getApplicationContext(), "Silahkan masukan password yang sama!", Toast.LENGTH_SHORT).show();

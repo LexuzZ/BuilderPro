@@ -1,5 +1,6 @@
 package com.example.builderpro.data.remote;
 
+import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -50,6 +51,7 @@ public class AuthenticationRemoteDataSource implements AuthenticationDataSource 
 
     @Override
     public void login(String email, String password, AuthenticationCallback callback) {
-
+        Log.d("TES GITHUB", "TES GITHUB");
+        callback.success(true);
     }
 }

@@ -13,7 +13,7 @@ public class AuthenticationRepository {
         this.authenticationRemoteDataSource.register(user, password, new AuthenticationDataSource.AuthenticationCallback() {
             @Override
             public void success(Boolean success) {
-                callback.success(true);
+                callback.success(success);
             }
 
             @Override
