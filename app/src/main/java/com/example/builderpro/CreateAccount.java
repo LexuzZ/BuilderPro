@@ -82,9 +82,6 @@ public class CreateAccount extends AppCompatActivity {
     private void reload(){
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
-    private void reloading(){
-        startActivity(new Intent(getApplicationContext(), HomeWorker.class));
-    }
     @Override
     public void onStart() {
         super.onStart();
