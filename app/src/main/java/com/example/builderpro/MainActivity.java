@@ -22,7 +22,7 @@ public class
 MainActivity extends AppCompatActivity {
     private FirebaseUser firebaseUser;
     private TextView textName;
-    private Button btn_logOut;
+    private Button btn_logOut, btn_dash;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -32,6 +32,11 @@ MainActivity extends AppCompatActivity {
         textName = findViewById(R.id.name);
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         btn_logOut = findViewById(R.id.btn_logout);
+        btn_dash = findViewById(R.id.btn_dash);
+
+        btn_dash.setOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(), HomeUser.class));
+        });
 
         if (firebaseUser!=null){
             textName.setText(firebaseUser.getDisplayName());
