@@ -13,7 +13,7 @@ public class SettingUser extends AppCompatActivity {
         setContentView(R.layout.activity_setting_user);
     }
     public void out (View view){
-        Intent intent = new Intent (SettingUser.this, MainActivity.class);
+        Intent intent = new Intent (SettingUser.this, CreateAccount.class);
         startActivity(intent);
     }
     public void historyy (View view){
