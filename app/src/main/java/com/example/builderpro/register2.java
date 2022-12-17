@@ -50,7 +50,7 @@ public class register2 extends AppCompatActivity {
         progressDialog.setCancelable(false);
 
         btnSignW.setOnClickListener(v -> {
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            startActivity(new Intent(getApplicationContext(), HomeUser.class));
         });
         btnSignU.setOnClickListener(v -> {
             if ((editName.getText().length() > 0 && editEmail.getText().length() > 0 && editPassword.getText().length()>0)) {
