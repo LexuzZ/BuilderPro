@@ -13,11 +13,13 @@ public class AuthenticationRepository {
         this.authenticationRemoteDataSource.register(user, password, new AuthenticationDataSource.AuthenticationCallback() {
             @Override
             public void success(Boolean success) {
+
                 callback.success(success);
             }
 
             @Override
             public void error(Throwable err) {
+
                 callback.error(err);
             }
         });

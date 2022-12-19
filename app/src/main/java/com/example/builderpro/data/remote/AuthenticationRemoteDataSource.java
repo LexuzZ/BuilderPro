@@ -1,10 +1,6 @@
 package com.example.builderpro.data.remote;
 
-import android.util.Log;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
-
 import com.example.builderpro.data.interfaceDataSource.AuthenticationDataSource;
 import com.example.builderpro.data.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -44,7 +40,6 @@ public class AuthenticationRemoteDataSource implements AuthenticationDataSource 
                 }else{
                     callback.error(new Throwable(task.getException().getLocalizedMessage()));
                 }
-
             }
         });
     }
