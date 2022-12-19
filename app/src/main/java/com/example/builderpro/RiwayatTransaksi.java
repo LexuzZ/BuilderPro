@@ -11,6 +11,5 @@ public class RiwayatTransaksi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_riwayat_transaksi);
-        Log.d("TES RAFLY", "TES RAFLY");
     }
 }
