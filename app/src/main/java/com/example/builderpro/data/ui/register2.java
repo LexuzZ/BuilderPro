@@ -1,6 +1,5 @@
-package com.example.builderpro;
+package com.example.builderpro.data.ui;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
@@ -10,17 +9,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.builderpro.HomeUser;
+import com.example.builderpro.R;
 import com.example.builderpro.data.interfaceDataSource.AuthenticationDataSource;
 import com.example.builderpro.data.model.Alamat;
 import com.example.builderpro.data.model.User;
 import com.example.builderpro.data.remote.AuthenticationRemoteDataSource;
 import com.example.builderpro.data.repository.AuthenticationRepository;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class register2 extends AppCompatActivity {
     private EditText editName,  editEmail, editPassword, editRepass;
