@@ -110,7 +110,7 @@
         android:layout_height="36dp"
         android:ems="10"
         android:hint="Password: "
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:textColor="#000000"
         android:textSize="12dp"
         android:textColorHint="@color/black"
@@ -276,7 +276,7 @@
         app:layout_constraintVertical_bias="0.945" />
 
     <Button
-        android:id="@+id/button24"
+        android:id="@+id/btn_changePassword"
         android:layout_width="183dp"
         android:layout_height="37dp"
         android:backgroundTint="#CCCCCC"

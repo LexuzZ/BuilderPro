@@ -74,7 +74,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#AFB5BD"
-        android:onClick="out"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.912"
@@ -188,7 +187,7 @@
         app:srcCompat="@drawable/profil" />
 
     <TextView
-        android:id="@+id/textView1222"
+        android:id="@+id/namee"
         android:layout_width="160dp"
         android:layout_height="46dp"
         android:layout_centerHorizontal="true"
@@ -220,12 +219,13 @@
         android:id="@+id/imageView47"
         android:layout_width="35dp"
         android:layout_height="30dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView224"
-        app:layout_constraintEnd_toEndOf="@+id/imageView224"
-        app:layout_constraintHorizontal_bias="0.129"
-        app:layout_constraintStart_toStartOf="@+id/imageView224"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Logout"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Logout"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="@+id/btn_Logout"
         app:layout_constraintTop_toBottomOf="@+id/imageView223"
-        app:layout_constraintVertical_bias="0.512"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/logout5" />
 
     <ImageView

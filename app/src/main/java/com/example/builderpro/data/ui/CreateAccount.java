@@ -11,7 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.builderpro.HomeUser;
 import com.example.builderpro.HomeWorker;
+import com.example.builderpro.Password;
 import com.example.builderpro.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -24,7 +26,7 @@ public class CreateAccount extends AppCompatActivity {
 
     private FirebaseUser firebaseUser;
     private EditText editEmail, editPassword;
-    private Button btnLoginUser, btnLoginWorker, btnRegister;
+    private Button btnLoginUser, btnLoginWorker, btnRegister, change;
     private FirebaseAuth mAuth;
     private ProgressDialog progressDialog;
     @SuppressLint("MissingInflatedId")
@@ -40,11 +42,16 @@ public class CreateAccount extends AppCompatActivity {
         btnLoginUser = findViewById(R.id.btnu);
         btnLoginWorker = findViewById(R.id.buttonw);
         btnRegister = findViewById(R.id.btnreg);
+        change = findViewById(R.id.btn_changePassword);
         mAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(CreateAccount.this);
         progressDialog.setTitle("Loading");
         progressDialog.setMessage("Silahkan Tunggu");
         progressDialog.setCancelable(false);
+
+        change.setOnClickListener(v ->{
+            startActivity(new Intent(getApplicationContext(), Password.class));
+        });
 
         btnRegister.setOnClickListener(v ->{
             startActivity(new Intent(getApplicationContext(), register2.class));
@@ -80,7 +87,7 @@ public class CreateAccount extends AppCompatActivity {
         });
     }
     private void reload(){
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        startActivity(new Intent(getApplicationContext(), HomeUser.class));
     }
     @Override
     public void onStart() {
