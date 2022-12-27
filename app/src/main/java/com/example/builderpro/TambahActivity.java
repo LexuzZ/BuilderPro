@@ -20,7 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class TambahActivity extends AppCompatActivity {
-    EditText idnama, idharga;
+    EditText idnama, idharga, iddate, idaction;
     Button save;
     DatabaseReference database = FirebaseDatabase.getInstance().getReference();
 
@@ -32,6 +32,8 @@ public class TambahActivity extends AppCompatActivity {
 
         idnama = findViewById(R.id.nama);
         idharga = findViewById(R.id.harga);
+        iddate = findViewById(R.id.loc);
+        idaction = findViewById(R.id.action);
         save = findViewById(R.id.simpan);
 
         save.setOnClickListener(new View.OnClickListener() {
@@ -39,13 +41,19 @@ public class TambahActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String getNama = idnama.getText().toString();
                 String getHarga = idharga.getText().toString();
+                String getLoc = iddate.getText().toString();
+                String getAction = idaction.getText().toString();
 
                 if(getNama.isEmpty()){
                     idnama.setError("Masukkan Nama...");
-                }else if(getHarga.isEmpty()){
+                }else if(getHarga.isEmpty()) {
                     idharga.setError("Masukkan Harga..");
+                }else if(getLoc.isEmpty()) {
+                    iddate.setError("Masukkan Kecamatan...");
+                }else if(getAction.isEmpty()){
+                    idaction.setError("Masukkan Action...");
                 }else{
-                    database.child("Tukang").push().setValue(new Tukang(getNama, getHarga)).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    database.child("Tukang").push().setValue(new Tukang(getNama, getHarga, getLoc, getAction)).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void unused) {
                             Toast.makeText(TambahActivity.this, "Data Berhasil Disimpan" , Toast.LENGTH_SHORT).show();

@@ -45,6 +45,8 @@ public class AuthenticationRemoteDataSource implements AuthenticationDataSource 
     }
 
     @Override
-    public void login(String email, String password, AuthenticationCallback callback) {
+    public void registerW(String email, String password, AuthenticationCallback callback) {
+
     }
 }
+

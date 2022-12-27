@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,12 +9,14 @@
     android:background="#ccc"
     tools:context=".activities.fragment.Painter">
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/data_tampil"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="721dp"
         android:layout_marginTop="10dp"
         tools:listitem="@layout/layout_item">
+
     </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

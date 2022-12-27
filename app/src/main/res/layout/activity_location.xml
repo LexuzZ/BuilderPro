@@ -24,7 +24,7 @@
         android:id="@+id/imageView23"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#AFB5BD"
         android:onClick="set"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,82 +135,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toBottomOf="@+id/view3"
         app:layout_constraintVertical_bias="0.794"
         app:srcCompat="@drawable/linebold" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="165dp"
-        android:layout_height="37dp"
+        android:layout_width="183dp"
+        android:layout_height="52dp"
         android:backgroundTint="#CCCCCC"
         android:fontFamily="sans-serif-light"
         android:inputType="textCapWords"
-        android:text="Gubeng, Surabaya"
-        android:textColor="#586F92"
-        android:textSize="12dp"
         android:onClick="loc"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.381" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="165dp"
-        android:layout_height="37dp"
-        android:backgroundTint="#CCCCCC"
-        android:fontFamily="sans-serif-light"
-        android:inputType="textCapWords"
-        android:text="Tandes, Surabaya"
-        android:textColor="#586F92"
-        android:textSize="12dp"
-        android:onClick="loce"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="165dp"
-        android:layout_height="37dp"
-        android:backgroundTint="#CCCCCC"
-        android:fontFamily="sans-serif-light"
-        android:inputType="textCapWords"
-        android:text="Mulyorejo, Surabaya"
-        android:onClick="locr"
+        android:text="Kota Surabaya"
         android:textColor="#586F92"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.489" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="165dp"
-        android:layout_height="37dp"
-        android:backgroundTint="#CCCCCC"
-        android:fontFamily="sans-serif-light"
-        android:inputType="textCapWords"
-        android:text="Rungkut, Surabaya"
-        android:onClick="locc"
-        android:textColor="#586F92"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435" />
+        app:layout_constraintVertical_bias="0.475" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
