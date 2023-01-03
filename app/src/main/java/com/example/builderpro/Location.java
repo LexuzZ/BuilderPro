@@ -20,22 +20,7 @@ public class Location extends AppCompatActivity {
     }
 
     public void loc(View view) {
-        Intent intent = new Intent(Location.this, Painter.class);
-        startActivity(intent);
-    }
-
-    public void locr(View view) {
-        Intent intent = new Intent(Location.this, RoofTile.class);
-        startActivity(intent);
-    }
-
-    public void locc(View view) {
-        Intent intent = new Intent(Location.this, Ceramist.class);
-        startActivity(intent);
-    }
-
-    public void loce(View view) {
-        Intent intent = new Intent(Location.this, Etc.class);
+        Intent intent = new Intent(Location.this, PaintList.class);
         startActivity(intent);
     }
 

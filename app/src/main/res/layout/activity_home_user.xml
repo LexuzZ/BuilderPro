@@ -227,170 +227,33 @@
         android:onClick="buy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.484"
+        app:layout_constraintVertical_bias="0.608"
         app:srcCompat="@drawable/homeframe" />
+
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="103dp"
-        android:layout_height="27dp"
+        android:layout_width="77dp"
+        android:layout_height="49dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:text="Painter"
+        android:text="List Tukang"
         android:textColor="#586F92"
         android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.23"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
-
-    <ImageButton
-        android:id="@+id/imageButton44"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#CCCCCC"
-        android:onClick="buyc"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.756"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.484"
-        app:srcCompat="@drawable/homeframe" />
-
-    <TextView
-        android:id="@+id/textView134"
-        android:layout_width="103dp"
-        android:layout_height="27dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center"
-        android:text="Ceramist"
-        android:textColor="#586F92"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.724"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
-
-    <ImageButton
-        android:id="@+id/imageButton45"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#CCCCCC"
-        android:onClick="buyr"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.205"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.828"
-        app:srcCompat="@drawable/homeframe" />
-
-    <TextView
-        android:id="@+id/textView135"
-        android:layout_width="103dp"
-        android:layout_height="27dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center"
-        android:text="Roof Tile"
-        android:textColor="#586F92"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.237"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.887" />
-
-    <ImageButton
-        android:id="@+id/imageButton46"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#CCCCCC"
-        android:onClick="buyt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.756"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.828"
-        app:srcCompat="@drawable/homeframe" />
-
-    <TextView
-        android:id="@+id/textView136"
-        android:layout_width="103dp"
-        android:layout_height="27dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center"
-        android:text="Etc"
-        android:textColor="#586F92"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.724"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.887" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
         app:layout_constraintEnd_toEndOf="@+id/imageButton4"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="@+id/imageButton4"
         app:layout_constraintTop_toTopOf="@+id/imageButton4"
-        app:layout_constraintVertical_bias="0.489"
-        app:srcCompat="@drawable/logopainter" />
+        app:layout_constraintVertical_bias="0.457" />
 
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton44"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton44"
-        app:layout_constraintStart_toStartOf="@+id/imageButton44"
-        app:layout_constraintTop_toTopOf="@+id/imageButton44"
-        app:srcCompat="@drawable/logokeramik" />
-
-    <ImageView
-        android:id="@+id/imageView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton45"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton45"
-        app:layout_constraintStart_toStartOf="@+id/imageButton45"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        app:srcCompat="@drawable/logorooftile" />
-
-    <ImageView
-        android:id="@+id/imageView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton46"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton46"
-        app:layout_constraintStart_toEndOf="@+id/imageButton45"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton44"
-        app:srcCompat="@drawable/logoetc" />
-
-
-        <ImageButton
+    <ImageButton
             android:id="@+id/setting"
             android:layout_width="40dp"
             android:layout_height="40dp"

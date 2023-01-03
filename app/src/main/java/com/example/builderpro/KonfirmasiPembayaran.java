@@ -33,11 +33,9 @@ public class KonfirmasiPembayaran extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.radio_paypal:
                 if (checked)
-                    // Pirates are the best
                     break;
             case R.id.radio_gopay:
                 if (checked)
-                    // Ninjas rule
                     break;
             case R.id.radio_bank:
                 if (checked)

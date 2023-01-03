@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Switch;
 
+import com.example.builderpro.activities.fragment.Painter;
 import com.example.builderpro.order.CekOrder;
 
 public class HomeWorker extends AppCompatActivity {
@@ -27,6 +28,10 @@ public class HomeWorker extends AppCompatActivity {
     }
     public void sett (View view){
         Intent intent = new Intent(HomeWorker.this, SettingWorker.class);
+        startActivity(intent);
+    }
+    public void recyc (View view){
+        Intent intent = new Intent(HomeWorker.this, Painter.class);
         startActivity(intent);
     }
 

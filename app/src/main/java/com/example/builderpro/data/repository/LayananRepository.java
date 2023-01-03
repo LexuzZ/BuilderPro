@@ -9,8 +9,8 @@ public class LayananRepository {
     private LayananDataSource layananRemoteDataSource;
     private LayananDataSource layananLocalDataSource;
 
-    public LayananRepository(LayananDataSource layananLocalDataSource) {
-        this.layananLocalDataSource = layananLocalDataSource;
+    public LayananRepository(LayananDataSource layananRemoteDataSource) {
+      //  this.layananLocalDataSource = layananLocalDataSource;
         this.layananRemoteDataSource = layananRemoteDataSource;
 
     }
@@ -18,6 +18,7 @@ public class LayananRepository {
         this.layananRemoteDataSource.getLayanan(new LayananDataSource.GetLayananCallback() {
             @Override
             public void success(ArrayList<Layanan> layanan) {
+                callback.success(layanan);
 
             }
 

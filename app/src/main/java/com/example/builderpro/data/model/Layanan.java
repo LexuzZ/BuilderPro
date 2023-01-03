@@ -4,16 +4,15 @@ import java.util.Date;
 
 public class Layanan {
     private String id, name;
-    private Date date;
     private int harga;
     private Tukang tukang;
 
-    public Layanan(String id, String name, Date date, int harga, Tukang tukang) {
+    public Layanan(String id, String name, int harga) {
         this.id = id;
         this.name = name;
-        this.date = date;
+
         this.harga = harga;
-        this.tukang = tukang;
+
     }
 
     public String getId() {
@@ -40,13 +39,7 @@ public class Layanan {
         this.name = name;
     }
 
-    public Date getDate() {
-        return date;
-    }
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     public int getHarga() {
         return harga;
@@ -54,5 +47,15 @@ public class Layanan {
 
     public void setHarga(int harga) {
         this.harga = harga;
+    }
+
+    @Override
+    public String toString() {
+        return "Layanan{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", harga=" + harga +
+                ", tukang=" + tukang +
+                '}';
     }
 }

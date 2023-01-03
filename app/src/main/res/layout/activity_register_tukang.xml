@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#cccccc"
-    tools:context=".data.ui.register2">
-
+    tools:context=".data.ui.RegisterTukang">
 
     <ImageView
         android:id="@+id/logo"
@@ -77,36 +75,34 @@
 
 
     <ImageView
-        android:id="@+id/imageView3355"
+        android:id="@+id/imageView335"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857"
+        app:layout_constraintVertical_bias="0.845"
         app:srcCompat="@drawable/kolomwarna" />
 
-
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button3"
         android:layout_width="184dp"
         android:layout_height="34dp"
         android:backgroundTint="#586F92"
         android:fontFamily="@font/poppins_semibold"
         android:inputType="textCapWords"
-        android:onClick="Login"
-        android:text="Sign Up"
+        android:text="Sign Up as Worker"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.849" />
+        app:layout_constraintVertical_bias="0.837" />
 
     <Button
         android:id="@+id/button21"
@@ -329,6 +325,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.647" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

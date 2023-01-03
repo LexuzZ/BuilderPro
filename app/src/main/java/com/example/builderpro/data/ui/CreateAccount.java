@@ -7,6 +7,7 @@ import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -26,9 +27,10 @@ public class CreateAccount extends AppCompatActivity {
 
     private FirebaseUser firebaseUser;
     private EditText editEmail, editPassword;
-    private Button btnLoginUser, btnLoginWorker, btnRegister, change;
+    private Button btnLoginUser, btnLoginWorker, btnRegister, change, btnRegisterW;
     private FirebaseAuth mAuth;
     private ProgressDialog progressDialog;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,7 @@ public class CreateAccount extends AppCompatActivity {
         btnLoginUser = findViewById(R.id.btnu);
         btnLoginWorker = findViewById(R.id.buttonw);
         btnRegister = findViewById(R.id.btnreg);
+        btnRegisterW = findViewById(R.id.btnregisterW);
         change = findViewById(R.id.btn_changePassword);
         mAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(CreateAccount.this);
@@ -49,54 +52,62 @@ public class CreateAccount extends AppCompatActivity {
         progressDialog.setMessage("Silahkan Tunggu");
         progressDialog.setCancelable(false);
 
-        change.setOnClickListener(v ->{
+        change.setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Password.class));
         });
 
-        btnRegister.setOnClickListener(v ->{
+        btnRegister.setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), register2.class));
         });
-        btnLoginUser.setOnClickListener(v ->{
-            if (editEmail.getText().length()>0 && editPassword.getText().length()>0){
-                login(editEmail.getText().toString(), editPassword.getText().toString());
-            }else{
-                Toast.makeText(getApplicationContext(),"Silahkan isi semua data", Toast.LENGTH_SHORT).show();
+        btnRegisterW.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CreateAccount.this, RegisterTukang.class));
             }
         });
-        btnLoginWorker.setOnClickListener(v ->{
+        btnLoginUser.setOnClickListener(v -> {
+            if (editEmail.getText().length() > 0 && editPassword.getText().length() > 0) {
+                login(editEmail.getText().toString(), editPassword.getText().toString());
+            } else {
+                Toast.makeText(getApplicationContext(), "Silahkan isi semua data", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnLoginWorker.setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), HomeWorker.class));
         });
 
     }
-    private void login(String email, String password){
+
+    private void login(String email, String password) {
         progressDialog.show();
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful() && task.getResult()!=null){
-                    if (task.getResult().getUser()!=null){
+                if (task.isSuccessful() && task.getResult() != null) {
+                    if (task.getResult().getUser() != null) {
                         reload();
-                    }else{
-                        Toast.makeText(getApplicationContext(),"Login Gagal", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Login Gagal", Toast.LENGTH_SHORT).show();
                     }
-                }else{
-                    Toast.makeText(getApplicationContext(),"Login Gagal", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Login Gagal", Toast.LENGTH_SHORT).show();
                 }
                 progressDialog.dismiss();
             }
         });
     }
-    private void reload(){
+
+    private void reload() {
         startActivity(new Intent(getApplicationContext(), HomeUser.class));
     }
+
     @Override
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
+        if (currentUser != null) {
             reload();
         }
     }
-
 }

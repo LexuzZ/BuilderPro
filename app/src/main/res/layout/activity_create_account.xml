@@ -37,17 +37,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.271" />
 
-    <ImageView
-        android:id="@+id/imageView222"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953"
-        app:srcCompat="@drawable/kolom" />
+
 
     <ImageView
         android:id="@+id/imageView44"
@@ -263,17 +253,33 @@
         android:backgroundTint="#CCCCCC"
         android:fontFamily="@font/poppins_semibold"
         android:inputType="textCapWords"
-        android:onClick="Next"
-        android:text="Sign Up"
+        android:text="Sign Up user"
         android:textAlignment="center"
         android:textColor="#586F92"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945" />
+        app:layout_constraintVertical_bias="0.991" />
+
+    <Button
+        android:id="@+id/btnregisterW"
+        android:layout_width="180dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#CCCCCC"
+        android:fontFamily="@font/poppins_semibold"
+        android:inputType="textCapWords"
+        android:text="Sign Up worker"
+        android:textAlignment="center"
+        android:textColor="#586F92"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnreg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_changePassword"
