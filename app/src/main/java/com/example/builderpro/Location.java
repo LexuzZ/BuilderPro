@@ -6,11 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.builderpro.activities.fragment.Ceramist;
-import com.example.builderpro.activities.fragment.Etc;
-import com.example.builderpro.activities.fragment.Painter;
-import com.example.builderpro.activities.fragment.RoofTile;
-
 public class Location extends AppCompatActivity {
 
     @Override
