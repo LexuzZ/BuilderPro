@@ -68,13 +68,11 @@ public class AdapterTukang extends RecyclerView.Adapter<AdapterTukang.MyViewHold
                                 Toast.makeText(activity, "Gagal Menghapus Data", Toast.LENGTH_SHORT).show();
                             }
                         });
-
                     }
                 }).setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();
-
                     }
                 }).setMessage("Apakah yakin ingin menghapus ? " + data.getNama());
                 builder.show();

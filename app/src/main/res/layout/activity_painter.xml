@@ -9,7 +9,6 @@
     android:background="#ccc"
     tools:context=".activities.fragment.Painter">
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/data_tampil"
         android:layout_width="match_parent"
@@ -20,16 +19,17 @@
     </androidx.recyclerview.widget.RecyclerView>
 
 
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_tambah"
+
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="20dp"
+
         android:layout_marginRight="20dp"
-        android:backgroundTint="#ccc"
+        android:backgroundTint="#FF03DAC5"
         app:srcCompat="@drawable/add">
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
