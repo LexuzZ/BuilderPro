@@ -17,10 +17,7 @@ public class HomeWorker extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_worker);
 
-        Switch simpleSwitch = (Switch) findViewById(R.id.simpleSwitch);
 
-        simpleSwitch.setTextOn("On");
-        simpleSwitch.setTextOff("Off");
     }
     public void cek (View view){
         Intent intent = new Intent(HomeWorker.this, CekOrder.class);

@@ -11,6 +11,7 @@ import android.os.Bundle;
 
 import com.example.builderpro.activities.fragment.Painter;
 import com.example.builderpro.adapter.AdapterTukang;
+import com.example.builderpro.adapter.AdapterUser;
 import com.example.builderpro.data.model.Tukang;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -21,7 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class PaintList extends AppCompatActivity {
-    AdapterTukang adapterTukang;
+    AdapterUser adapterUser;
     DatabaseReference database = FirebaseDatabase.getInstance().getReference();
     ArrayList<Tukang> listTukang;
     RecyclerView data_tampil;
@@ -50,8 +51,8 @@ public class PaintList extends AppCompatActivity {
                     listTukang.add(tkg);
 
                 }
-                adapterTukang = new AdapterTukang(listTukang, PaintList.this);
-                data_tampil.setAdapter(adapterTukang);
+                adapterUser = new AdapterUser(listTukang, PaintList.this);
+                data_tampil.setAdapter(adapterUser);
             }
 
             @Override

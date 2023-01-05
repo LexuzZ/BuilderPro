@@ -7,16 +7,82 @@
     android:background="#ccc"
     tools:context=".PaintList">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#586F92">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_menu" />
+
+    </RelativeLayout>
+
+
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/data_tampil"
         android:layout_width="match_parent"
         android:layout_height="721dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="60dp"
         tools:listitem="@layout/layout_item2">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#586F92">
+
+        <ImageButton
+            android:id="@+id/history_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:src="@drawable/ic_history" />
+
+
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:src="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:src="@drawable/ic_settings" />
+
+    </RelativeLayout>
 
 
 
