@@ -1,4 +1,4 @@
-package com.example.builderpro;
+package com.example.builderpro.recyclerView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,8 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 
-import com.example.builderpro.activities.fragment.Painter;
-import com.example.builderpro.adapter.AdapterTukang;
+import com.example.builderpro.R;
 import com.example.builderpro.adapter.AdapterUser;
 import com.example.builderpro.data.model.Tukang;
 import com.google.firebase.database.DataSnapshot;
@@ -51,7 +50,7 @@ public class PaintList extends AppCompatActivity {
                     listTukang.add(tkg);
 
                 }
-                adapterUser = new AdapterUser(listTukang, PaintList.this);
+                adapterUser = new AdapterUser(listTukang, PaintList.this );
                 data_tampil.setAdapter(adapterUser);
             }
 

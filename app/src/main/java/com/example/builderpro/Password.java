@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.builderpro.data.ui.MainActivity;
+import com.example.builderpro.data.sign.MainActivity;
 
 
 public class Password extends AppCompatActivity {

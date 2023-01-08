@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ccc"
-    tools:context=".activities.fragment.Painter">
+    tools:context=".recyclerView.Painter">
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -68,11 +68,10 @@
         app:srcCompat="@drawable/kolom" />
 
     <ImageButton
-        android:id="@+id/imageView225"
+        android:id="@+id/btn_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#AFB5BD"
-        android:onClick="out"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.919"

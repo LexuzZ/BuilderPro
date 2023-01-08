@@ -1,4 +1,4 @@
-package com.example.builderpro.activities.fragment;
+package com.example.builderpro.recyclerView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,11 +14,9 @@ import android.view.View;
 import com.example.builderpro.KonfirmasiPembayaran;
 import com.example.builderpro.R;
 import com.example.builderpro.SettingUser;
-import com.example.builderpro.TambahActivity;
 import com.example.builderpro.adapter.AdapterTukang;
 import com.example.builderpro.data.interfaceDataSource.LayananDataSource;
 import com.example.builderpro.data.model.Tukang;
-import com.example.builderpro.data.remote.LayananRemoteDataSource;
 import com.example.builderpro.data.repository.LayananRepository;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cccccc"
-    tools:context=".data.ui.register2">
+    tools:context=".data.sign.register2">
 
 
     <ImageView

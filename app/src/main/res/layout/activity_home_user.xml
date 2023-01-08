@@ -134,8 +134,8 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
         android:layout_centerInParent="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
@@ -175,11 +175,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true"
-            android:gravity="center"
             android:fontFamily="@font/poppins_semibold"
-            android:textSize="12dp"
+            android:gravity="center"
+            android:text="Bayar"
             android:textColor="#586F92"
-            android:text="Bayar">
+            android:textSize="12dp">
 
         </TextView>
 
@@ -188,12 +188,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:text="Top Up"
             android:fontFamily="@font/poppins_semibold"
-            android:textSize="12dp"
+            android:gravity="center"
+            android:text="Top Up"
             android:textColor="#586F92"
-            android:gravity="center">
-        </TextView>
+            android:textSize="12dp"></TextView>
 
         <TextView
             android:id="@+id/textView1323"

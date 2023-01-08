@@ -59,9 +59,30 @@
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold">
-
-
         </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keahlian"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/tv_ahli"
+            android:padding="5dp">
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:id="@+id/tv_rate"/>
 
 
         <TextView

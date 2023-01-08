@@ -5,9 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Switch;
 
-import com.example.builderpro.activities.fragment.Painter;
+import com.example.builderpro.recyclerView.Painter;
 import com.example.builderpro.order.CekOrder;
 
 public class HomeWorker extends AppCompatActivity {

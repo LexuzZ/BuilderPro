@@ -1,267 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#cccccc"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/black"
+    android:orientation="vertical"
     tools:context=".HomeOrder">
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="415dp"
-        android:layout_height="191dp"
-        android:background="#40586F92"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="162dp"
-        android:layout_height="37dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center"
-        android:text="Konfirmasi"
-        android:textColor="#586F92"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#586F92">
 
-    <ImageView
-        android:id="@+id/imageView42"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328"
-        app:srcCompat="@drawable/linebold" />
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="184dp"
-        android:layout_height="33dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center_horizontal|top"
-        android:text="Sedang Proses"
-        android:textColor="#586F92"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.154"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_menu" />
+    </RelativeLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="131dp"
-        android:layout_height="30dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center_horizontal|top"
-        android:text="Tukang Cat"
-        android:textColor="#586F92"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.154"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="164dp"
-        android:layout_height="24dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center"
-        android:text="Estimasi Selesai 7 Hari"
-        android:textColor="#586F92"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="134dp"
-        android:layout_height="27dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center_horizontal|top"
-        android:text="Rp. 500.000,-"
-        android:textColor="#586F92"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+        <TextView
+            android:id="@+id/tv_tukang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Nama Tukang"
+            android:background="#fee"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="138dp"
-        android:layout_height="25dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center_horizontal|top"
-        android:text="Tukang Genteng"
-        android:textColor="#586F92"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.167"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.482" />
+        </TextView>
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="164dp"
-        android:layout_height="24dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center"
-        android:text="Estimasi Selesai 7 Hari"
-        android:textColor="#586F92"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.19"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+        <TextView
+            android:id="@+id/tv_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#fee"
+            android:text="Harga Tukang"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="134dp"
-        android:layout_height="27dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center_horizontal|top"
-        android:text="Rp. 500.000,-"
-        android:textColor="#586F92"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
+        </TextView>
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.641"
-        app:srcCompat="@drawable/linebold" />
+        <TextView
+            android:id="@+id/tv_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#fee"
+            android:text="Kecamatan"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55"
-        app:srcCompat="@drawable/linebold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keahlian"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#fee"
+            android:textColor="@color/black"
+            android:id="@+id/tv_ahli"
+            android:padding="5dp">
+        </TextView>
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="130dp"
-        android:layout_height="23dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center"
-        android:text="Total Pesanan:"
-        android:textColor="#586F92"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.388"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.609" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="134dp"
-        android:layout_height="27dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center_horizontal|top"
-        android:text="Rp. 1.000.000,-"
-        android:textColor="#586F92"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.862"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613" />
 
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#cccccc"
-        android:onClick="order"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.857"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.735"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:textSize="20dp"
+            android:background="#fee"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:id="@+id/tv_rate"/>
 
-        app:srcCompat="@drawable/kolomkecil" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="122dp"
-        android:layout_height="24dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center"
-        android:text="Terima Pesanan"
-        android:textColor="#586F92"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.826"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.721" />
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Tersedia"
+            android:background="#fee"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="italic">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </TextView>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="150dp"
+        android:backgroundTint="#586F92"
+        android:text="Order"
+        android:inputType="textCapWords"
+        android:id="@+id/btn_order"
+        android:textStyle="bold">
+
+    </Button>
+
+
+
+
+</LinearLayout>

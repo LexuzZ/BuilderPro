@@ -1,7 +1,14 @@
 package com.example.builderpro.data.repository;
 
+import androidx.annotation.NonNull;
+
 import com.example.builderpro.data.interfaceDataSource.AuthenticationDataSource;
 import com.example.builderpro.data.model.User;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.Map;
 
 public class AuthenticationRepository {
     AuthenticationDataSource authenticationRemoteDataSource;
@@ -16,6 +23,20 @@ public class AuthenticationRepository {
 
                 callback.success(success);
             }
+            @Override
+            public void error(Throwable err) {
+
+                callback.error(err);
+            }
+        });
+    }
+    public void getUserByEmail(String email, AuthenticationDataSource.UserCallback callback) {
+        this.authenticationRemoteDataSource.getUserByEmail(email, new AuthenticationDataSource.UserCallback() {
+            @Override
+            public void success(User success) {
+
+                callback.success(success);
+            }
 
             @Override
             public void error(Throwable err) {
@@ -23,6 +44,8 @@ public class AuthenticationRepository {
                 callback.error(err);
             }
         });
+
+
     }
 
 }

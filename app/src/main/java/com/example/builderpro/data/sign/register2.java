@@ -1,4 +1,4 @@
-package com.example.builderpro.data.ui;
+package com.example.builderpro.data.sign;
 
 import androidx.appcompat.app.AppCompatActivity;
 

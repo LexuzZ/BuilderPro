@@ -1,4 +1,4 @@
-package com.example.builderpro.data.ui;
+package com.example.builderpro.data.sign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,29 +9,28 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.builderpro.HomeUser;
 import com.example.builderpro.HomeWorker;
 import com.example.builderpro.R;
-import com.example.builderpro.data.interfaceDataSource.AuthenticationDataSource;
-import com.example.builderpro.data.model.Alamat;
-import com.example.builderpro.data.model.User;
-import com.example.builderpro.data.remote.AuthenticationRemoteDataSource;
-import com.example.builderpro.data.repository.AuthenticationRepository;
+import com.example.builderpro.data.interfaceDataSource.AuthTukangDataSource;
+import com.example.builderpro.data.model.Worker;
+import com.example.builderpro.data.remote.AuthTukangRemoteDataSource;
+import com.example.builderpro.data.repository.AuthTukangRepository;
 
 public class RegisterTukang extends AppCompatActivity {
-    private EditText editName,  editEmail, editPassword, editRepass;
+    private EditText editName, editEmail, editPassword, editRepass;
     private Button btnSignU, btnSignW;
     private ProgressDialog progressDialog;
-    private AuthenticationDataSource authenticationRemoteDataSource;
-    private AuthenticationRepository authenticationRepository;
+    private AuthTukangDataSource authTukangRemoteDataSource;
+    private AuthTukangRepository authTukangRepository;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_tukang);
 
-        authenticationRemoteDataSource = new AuthenticationRemoteDataSource();
-        authenticationRepository = new AuthenticationRepository(authenticationRemoteDataSource);
+
+        authTukangRemoteDataSource = new AuthTukangRemoteDataSource();
+        authTukangRepository = new AuthTukangRepository(authTukangRemoteDataSource);
 
         editName = findViewById(R.id.name);
         editEmail = findViewById(R.id.email);
@@ -49,37 +48,34 @@ public class RegisterTukang extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(), HomeWorker.class));
         });
         btnSignU.setOnClickListener(v -> {
-            if ((editName.getText().length() > 0 && editEmail.getText().length() > 0 && editPassword.getText().length()>0)) {
+            if ((editName.getText().length() > 0 && editEmail.getText().length() > 0 && editPassword.getText().length() > 0)) {
                 if (editPassword.getText().toString().equals(editRepass.getText().toString())) {
-                    Alamat alamat = new Alamat("", "", "", "");
-                    User user = new User(editName.getText().toString(), alamat, "", editEmail.getText().toString());
-                    register(user, editPassword.getText().toString());
+                    Worker worker = new Worker(editName.getText().toString(), editEmail.getText().toString());
+                    register(worker, editPassword.getText().toString());
                 } else {
                     Toast.makeText(getApplicationContext(), "Silahkan masukan password yang sama!", Toast.LENGTH_SHORT).show();
                 }
-            } else{
+            } else {
                 Toast.makeText(getApplicationContext(), "Silahkan isi semua data", Toast.LENGTH_SHORT).show();
             }
         });
     }
 
-    private void register(User user, String password) {
+    private void register(Worker worker, String password) {
         progressDialog.show();
 
-        authenticationRepository.register(user, password, new AuthenticationDataSource.AuthenticationCallback() {
+        authTukangRepository.register(worker, password, new AuthTukangDataSource.AuthCallback() {
             @Override
             public void success(Boolean success) {
                 Toast.makeText(getApplicationContext(), "Berhasil daftar", Toast.LENGTH_SHORT).show();
                 progressDialog.dismiss();
             }
+
             @Override
             public void error(Throwable err) {
-                Toast.makeText(getApplicationContext(), err.getMessage() , Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), err.getMessage(), Toast.LENGTH_SHORT).show();
                 progressDialog.dismiss();
             }
         });
-
-
     }
-
 }

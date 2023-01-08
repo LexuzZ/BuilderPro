@@ -4,7 +4,8 @@ import com.example.builderpro.data.model.User;
 
 public interface AuthenticationDataSource {
     public void register(User user, String password, AuthenticationCallback callback);
-    public void registerW(String email, String password, AuthenticationCallback callback);
+
+    void getUserByEmail(String email, UserCallback userCallback);
 
     public interface AuthenticationCallback {
         public void success(Boolean success);
@@ -13,5 +14,10 @@ public interface AuthenticationDataSource {
 
 
 
+
+    }
+    public interface UserCallback{
+        public void success (User success);
+        public void error(Throwable err);
     }
 }

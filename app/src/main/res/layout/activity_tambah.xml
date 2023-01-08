@@ -7,7 +7,34 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ccc"
-    tools:context=".TambahActivity">
+    tools:context=".recyclerView.TambahActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#586F92">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_menu" />
+
+    </RelativeLayout>
 
     <EditText
         android:id="@+id/nama"
@@ -33,11 +60,37 @@
         android:layout_marginBottom="10dp">
     </EditText>
 
+
+
     <EditText
         android:id="@+id/loc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masukkan Kecamatan"
+        android:importantForAutofill="no"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/ahli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Keahlian"
+        android:importantForAutofill="no"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Rating"
         android:importantForAutofill="no"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"

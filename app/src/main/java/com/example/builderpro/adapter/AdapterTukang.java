@@ -16,7 +16,7 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.builderpro.R;
-import com.example.builderpro.activities.fragment.DialogForm;
+import com.example.builderpro.recyclerView.DialogForm;
 import com.example.builderpro.data.model.Tukang;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -49,6 +49,8 @@ public class AdapterTukang extends RecyclerView.Adapter<AdapterTukang.MyViewHold
         holder.tv_tukang.setText("Nama : " + data.getNama());
         holder.tv_harga.setText("Harga :" + data.getHarga());
         holder.tv_date.setText("Kecamatan: " + data.getLoc());
+        holder.tv_ahli.setText("Keahlian: " + data.getAhli());
+        holder.tv_rate.setText("Rating: " + data.getRate());
         holder.tv_action.setText(" " + data.getAction());
         holder.btn_hapus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,6 +89,8 @@ public class AdapterTukang extends RecyclerView.Adapter<AdapterTukang.MyViewHold
                         data.getNama(),
                         data.getHarga(),
                         data.getLoc(),
+                        data.getAhli(),
+                        data.getRate(),
                         data.getAction(),
                         data.getKey(),
                         "Ubah"
@@ -105,7 +109,7 @@ public class AdapterTukang extends RecyclerView.Adapter<AdapterTukang.MyViewHold
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView tv_tukang, tv_harga, tv_date, tv_action;
+        TextView tv_tukang, tv_harga, tv_date, tv_action, tv_ahli, tv_rate;
         ImageView btn_hapus;
         CardView card_hasil;
         public MyViewHolder(@NonNull View itemView) {
@@ -113,6 +117,8 @@ public class AdapterTukang extends RecyclerView.Adapter<AdapterTukang.MyViewHold
             tv_tukang = itemView.findViewById(R.id.tv_tukang);
             tv_harga = itemView.findViewById(R.id.tv_harga);
             tv_date = itemView.findViewById(R.id.tv_loc);
+            tv_ahli = itemView.findViewById(R.id.tv_ahli);
+            tv_rate = itemView.findViewById(R.id.tv_rate);
             tv_action = itemView.findViewById(R.id.tv_action);
             card_hasil = itemView.findViewById(R.id.card_hasil);
             btn_hapus = itemView.findViewById(R.id.btn_hapus);
