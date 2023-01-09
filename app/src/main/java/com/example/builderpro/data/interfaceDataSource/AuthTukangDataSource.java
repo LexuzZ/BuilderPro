@@ -11,4 +11,8 @@ public interface AuthTukangDataSource {
 
         public void error(Throwable err);
     }
+    public interface WorkCallback{
+        public void success (Boolean success);
+        public void error(Throwable err);
+    }
 }

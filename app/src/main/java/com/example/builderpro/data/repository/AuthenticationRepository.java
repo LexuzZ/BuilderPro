@@ -17,7 +17,21 @@ public class AuthenticationRepository {
     }
 
     public void register(User user, String password, AuthenticationDataSource.AuthenticationCallback callback) {
-        this.authenticationRemoteDataSource.register(user, password, new AuthenticationDataSource.AuthenticationCallback() {
+        this.authenticationRemoteDataSource.register(user, password, "USER_BIASA", new AuthenticationDataSource.AuthenticationCallback() {
+            @Override
+            public void success(Boolean success) {
+
+                callback.success(success);
+            }
+            @Override
+            public void error(Throwable err) {
+
+                callback.error(err);
+            }
+        });
+    }
+    public void registerTukang(User user, String password, AuthenticationDataSource.AuthenticationCallback callback) {
+        this.authenticationRemoteDataSource.register(user, password, "USER_TUKANG", new AuthenticationDataSource.AuthenticationCallback() {
             @Override
             public void success(Boolean success) {
 
@@ -44,8 +58,6 @@ public class AuthenticationRepository {
                 callback.error(err);
             }
         });
-
-
     }
 
 }

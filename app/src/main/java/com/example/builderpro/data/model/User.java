@@ -24,4 +24,11 @@ public class User {
         this.no_hp = no_hp;
         this.email = email;
     }
+    public User(String nama, Alamat alamat, String no_hp, String email, boolean is_tukang) {
+        this.nama = nama;
+        this.alamat = alamat;
+        this.no_hp = no_hp;
+        this.email = email;
+        this.is_tukang = is_tukang;
+    }
 }

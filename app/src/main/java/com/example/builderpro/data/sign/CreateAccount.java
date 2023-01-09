@@ -75,11 +75,13 @@ public class CreateAccount extends AppCompatActivity {
             }
         });
         btnLoginWorker.setOnClickListener(v -> {
-            startActivity(new Intent(getApplicationContext(), HomeWorker.class));
+            if (editEmail.getText().length() > 0 && editPassword.getText().length() > 0){
+                login(editEmail.getText().toString(), editPassword.getText().toString());
+            }else{
+                Toast.makeText(getApplicationContext(), "Silahkan Isi Semua Data", Toast.LENGTH_SHORT).show();
+            }
         });
-
     }
-
     private void login(String email, String password) {
         progressDialog.show();
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -102,30 +104,20 @@ public class CreateAccount extends AppCompatActivity {
     private void reload() {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
-
-
             authenticationRepository.getUserByEmail(currentUser.getEmail(), new AuthenticationDataSource.UserCallback() {
                 @Override
                 public void success(User success) {
-
                     if (success.is_tukang) {
-
                     } else {
                         startActivity(new Intent(getApplicationContext(), HomeUser.class));
                     }
-
-
                 }
-
                 @Override
                 public void error(Throwable err) {
-
                 }
             });
         }
-
     }
-
     @Override
     public void onStart() {
         super.onStart();

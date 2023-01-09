@@ -33,27 +33,20 @@ public class AuthenticationRemoteDataSource implements AuthenticationDataSource 
     }
 
     @Override
-    public void register(User user, String password, AuthenticationCallback callback) {
+    public void register(User user, String password, String type, AuthenticationCallback callback) {
         mAuth.createUserWithEmailAndPassword(user.email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     FirebaseUser firebaseUser = task.getResult().getUser();
                     if (firebaseUser != null) {
-                         Map<String, Object> adduser = new HashMap<>();
-
-
-
-                                adduser.put("nama", user.nama);
-                                // put("Alamat", user.alamat);
-                                // put("no.hp", "");
-                                adduser.put("email", user.email);
-                                adduser.put("type", "USER_BIASA");
-
-
-
+                        Map<String, Object> adduser = new HashMap<>();
+                        adduser.put("nama", user.nama);
+                        // put("Alamat", user.alamat);
+                        // put("no.hp", "");
+                        adduser.put("email", user.email);
+                        adduser.put("type", type);
                         db.collection("user").add(adduser);
-
                         UserProfileChangeRequest request = new UserProfileChangeRequest.Builder()
                                 .setDisplayName(user.nama)
                                 .build();
@@ -75,15 +68,14 @@ public class AuthenticationRemoteDataSource implements AuthenticationDataSource 
 
     public void getUserByEmail(String email, UserCallback callback) {
 
-        db.collection("user").whereEqualTo("email",email).get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        db.collection("user").whereEqualTo("email", email).get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
                 if (task.isSuccessful()) {
-
                     Map<String, Object> data = task.getResult().getDocuments().get(0).getData();
-                    User user = new User((String) data.get("nama"),null, "", (String) data.get("email"));
-                    if (!data.get("type").toString().equals("USER_BIASA")){
+                    User user = new User((String) data.get("nama"), null, "", (String) data.get("email"));
+                    if (!data.get("type").toString().equals("USER_BIASA")) {
                         user.is_tukang = true;
                     }
                     Log.e("user", user.toString());
