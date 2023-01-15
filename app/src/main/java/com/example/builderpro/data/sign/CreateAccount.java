@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.builderpro.HomeUser;
+import com.example.builderpro.dashboard.HomeUser;
 import com.example.builderpro.HomeWorker;
 import com.example.builderpro.Password;
 import com.example.builderpro.R;

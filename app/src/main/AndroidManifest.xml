@@ -178,7 +178,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".HomeUser"
+            android:name=".dashboard.HomeUser"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.builderpro.HomeUser;
+import com.example.builderpro.dashboard.HomeUser;
 import com.example.builderpro.R;
 import com.example.builderpro.SettingUser;
 import com.example.builderpro.adapter.AdapterUser;

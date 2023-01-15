@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.builderpro.HomeUser;
+import com.example.builderpro.dashboard.HomeUser;
 import com.example.builderpro.R;
 import com.example.builderpro.data.interfaceDataSource.AuthenticationDataSource;
 import com.example.builderpro.data.model.Alamat;

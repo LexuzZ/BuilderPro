@@ -11,7 +11,7 @@
     android:layout_marginLeft="15dp"
     app:cardCornerRadius="12dp"
     app:cardElevation="8dp"
-    app:cardBackgroundColor="#fee"
+    app:cardBackgroundColor="#E0FFFF"
     android:id="@+id/card_hasil">
 
 

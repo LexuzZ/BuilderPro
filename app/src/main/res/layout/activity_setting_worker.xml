@@ -140,7 +140,7 @@
         android:id="@+id/view3"
         android:layout_width="410dp"
         android:layout_height="250dp"
-        android:background="#40586F92"
+        android:background="#586F92"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -150,9 +150,9 @@
 
     <View
         android:id="@+id/view5"
-        android:layout_width="294dp"
-        android:layout_height="243dp"
-        android:background="#414042"
+        android:layout_width="297dp"
+        android:layout_height="251dp"
+        android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/view3"
         app:layout_constraintEnd_toEndOf="@+id/view3"
         app:layout_constraintHorizontal_bias="1.0"
@@ -165,27 +165,19 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.101"
-        app:srcCompat="@drawable/lingkaran" />
+        app:srcCompat="@drawable/ic_user" />
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="62dp"
-        android:layout_height="65dp"
-        android:backgroundTint="#B58E1A"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
-        app:layout_constraintEnd_toEndOf="@+id/imageView22"
-        app:layout_constraintStart_toStartOf="@+id/imageView22"
-        app:layout_constraintTop_toTopOf="@+id/imageView22"
-        app:layout_constraintVertical_bias="0.456"
-        app:srcCompat="@drawable/profil" />
+
+
+
 
     <TextView
-        android:id="@+id/textView1222"
+        android:id="@+id/name"
         android:layout_width="160dp"
         android:layout_height="46dp"
         android:layout_centerHorizontal="true"
@@ -193,7 +185,7 @@
         android:fontFamily="sans-serif-light"
         android:gravity="center"
         android:text="Tukang Cat "
-        android:textColor="#586F92"
+        android:textColor="#fff"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -217,11 +209,11 @@
         android:id="@+id/imageView47"
         android:layout_width="35dp"
         android:layout_height="30dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView225"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_logout"
         app:layout_constraintEnd_toEndOf="@+id/imageView224"
         app:layout_constraintHorizontal_bias="0.117"
-        app:layout_constraintStart_toStartOf="@+id/imageView225"
-        app:layout_constraintTop_toTopOf="@+id/imageView225"
+        app:layout_constraintStart_toStartOf="@+id/btn_logout"
+        app:layout_constraintTop_toTopOf="@+id/btn_logout"
         app:layout_constraintVertical_bias="0.512"
         app:srcCompat="@drawable/logout5" />
 

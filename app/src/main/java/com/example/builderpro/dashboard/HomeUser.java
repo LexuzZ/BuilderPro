@@ -1,14 +1,17 @@
-package com.example.builderpro;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.builderpro.dashboard;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.view.View;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.builderpro.Location;
+import com.example.builderpro.R;
+import com.example.builderpro.SettingUser;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 

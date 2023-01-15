@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.builderpro.HomeUser;
+import com.example.builderpro.dashboard.HomeUser;
 import com.example.builderpro.R;
 import com.example.builderpro.Ulasan;
 
