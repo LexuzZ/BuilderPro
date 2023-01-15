@@ -78,52 +78,46 @@
             android:textColor="#fff"
             android:textSize="15dp" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="241dp"
+                android:layout_height="154dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/location"
+                tools:ignore="MissingConstraints" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="183dp"
+                android:layout_height="52dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="160dp"
+                android:backgroundTint="#586F92"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textCapWords"
+                android:onClick="loc"
+                android:text="Kota Surabaya"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="162dp"
-        android:layout_height="37dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center_horizontal|top"
-        android:text="Builder Pro"
-        android:textColor="#586F92"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="102dp"
-        android:layout_height="24dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center_horizontal|top"
-        android:text="Surabaya"
-        android:textColor="#586F92"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.332" />
-
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="183dp"
-        android:layout_height="52dp"
-        android:layout_centerInParent="true"
-        android:backgroundTint="#586F92"
-        android:fontFamily="sans-serif-light"
-        android:inputType="textCapWords"
-        android:onClick="loc"
-        android:text="Kota Surabaya"
-        android:textColor="#fff"
-        android:textSize="12dp"
-        android:textStyle="bold" />
 
 </RelativeLayout>
 

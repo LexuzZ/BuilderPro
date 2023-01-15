@@ -11,17 +11,18 @@ import android.widget.Toast;
 
 import com.example.builderpro.HomeWorker;
 import com.example.builderpro.R;
-import com.example.builderpro.data.interfaceDataSource.AuthTukangDataSource;
-import com.example.builderpro.data.model.Worker;
-import com.example.builderpro.data.remote.AuthTukangRemoteDataSource;
-import com.example.builderpro.data.repository.AuthTukangRepository;
+import com.example.builderpro.data.interfaceDataSource.AuthenticationDataSource;
+import com.example.builderpro.data.model.Alamat;
+import com.example.builderpro.data.model.User;
+import com.example.builderpro.data.remote.AuthenticationRemoteDataSource;
+import com.example.builderpro.data.repository.AuthenticationRepository;
 
 public class RegisterTukang extends AppCompatActivity {
     private EditText editName, editEmail, editPassword, editRepass;
     private Button btnSignU, btnSignW;
     private ProgressDialog progressDialog;
-    private AuthTukangDataSource authTukangRemoteDataSource;
-    private AuthTukangRepository authTukangRepository;
+    private AuthenticationDataSource authRemoteDataSource;
+    private AuthenticationRepository authenticationRepository;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +30,8 @@ public class RegisterTukang extends AppCompatActivity {
         setContentView(R.layout.activity_register_tukang);
 
 
-        authTukangRemoteDataSource = new AuthTukangRemoteDataSource();
-        authTukangRepository = new AuthTukangRepository(authTukangRemoteDataSource);
+        authRemoteDataSource = new AuthenticationRemoteDataSource();
+        authenticationRepository = new AuthenticationRepository(authRemoteDataSource);
 
         editName = findViewById(R.id.name);
         editEmail = findViewById(R.id.email);
@@ -50,8 +51,9 @@ public class RegisterTukang extends AppCompatActivity {
         btnSignU.setOnClickListener(v -> {
             if ((editName.getText().length() > 0 && editEmail.getText().length() > 0 && editPassword.getText().length() > 0)) {
                 if (editPassword.getText().toString().equals(editRepass.getText().toString())) {
-                    Worker worker = new Worker(editName.getText().toString(), editEmail.getText().toString());
-                    register(worker, editPassword.getText().toString());
+                    Alamat alamat = new Alamat("", "", "", "");
+                    User user = new User(editName.getText().toString(), alamat, "", editEmail.getText().toString());
+                    registerTukang(user, editPassword.getText().toString());
                 } else {
                     Toast.makeText(getApplicationContext(), "Silahkan masukan password yang sama!", Toast.LENGTH_SHORT).show();
                 }
@@ -61,10 +63,10 @@ public class RegisterTukang extends AppCompatActivity {
         });
     }
 
-    private void register(Worker worker, String password) {
+    private void registerTukang(User user, String password) {
         progressDialog.show();
 
-        authTukangRepository.register(worker, password, new AuthTukangDataSource.AuthCallback() {
+        authenticationRepository.registerTukang(user, password, new AuthenticationDataSource.AuthenticationCallback() {
             @Override
             public void success(Boolean success) {
                 Toast.makeText(getApplicationContext(), "Berhasil daftar", Toast.LENGTH_SHORT).show();

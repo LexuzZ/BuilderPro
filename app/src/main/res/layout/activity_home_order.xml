@@ -35,95 +35,111 @@
 
     </RelativeLayout>
 
-        <TextView
-            android:id="@+id/tv_tukang"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="Nama Tukang"
-            android:background="#fee"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold">
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/tv_harga"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:background="#fee"
-            android:text="Harga Tukang"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold">
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/tv_loc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:background="#fee"
-            android:text="Kecamatan"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold">
-        </TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Keahlian"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:background="#fee"
-            android:textColor="@color/black"
-            android:id="@+id/tv_ahli"
-            android:padding="5dp">
-        </TextView>
-
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Rating"
-            android:textSize="20dp"
-            android:background="#fee"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:padding="5dp"
-            android:id="@+id/tv_rate"/>
-
-
-    <TextView
-        android:id="@+id/tv_action"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#fee"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="Tersedia"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:textStyle="italic">
+        android:layout_height="676dp"
+        app:cardBackgroundColor="#ccc">
 
-    </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#586F92"
-        android:text="Order"
-        android:layout_gravity="center"
-        android:inputType="textCapWords"
-        android:id="@+id/btn_order"
-        android:textStyle="bold">
+            <TextView
+                android:id="@+id/tv_tukang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0FFFF"
+                android:padding="5dp"
+                android:text="Nama Tukang"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold">
 
-    </Button>
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0FFFF"
+                android:padding="5dp"
+                android:text="Harga Tukang"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0FFFF"
+                android:padding="5dp"
+                android:text="Kecamatan"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tv_ahli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0FFFF"
+                android:padding="5dp"
+                android:text="Keahlian"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0FFFF"
+                android:padding="5dp"
+                android:text="Rating"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0FFFF"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Tersedia"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_order"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#586F92"
+                android:inputType="textCapWords"
+                android:text="Order"
+                android:textStyle="bold"></Button>
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
 
 
 

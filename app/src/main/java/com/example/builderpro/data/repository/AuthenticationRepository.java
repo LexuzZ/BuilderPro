@@ -1,17 +1,11 @@
 package com.example.builderpro.data.repository;
 
-import androidx.annotation.NonNull;
-
 import com.example.builderpro.data.interfaceDataSource.AuthenticationDataSource;
 import com.example.builderpro.data.model.User;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.QuerySnapshot;
-
-import java.util.Map;
 
 public class AuthenticationRepository {
     AuthenticationDataSource authenticationRemoteDataSource;
+    AuthenticationDataSource authRemoteDataSource;
     public AuthenticationRepository(AuthenticationDataSource authenticationRemoteDataSource) {
         this.authenticationRemoteDataSource = authenticationRemoteDataSource;
     }

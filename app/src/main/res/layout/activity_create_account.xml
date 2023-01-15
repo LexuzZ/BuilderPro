@@ -8,18 +8,19 @@
     android:background="#cccccc"
     tools:context=".data.sign.CreateAccount">
 
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="86dp"
-        android:layout_height="84dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="140dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074"
-        app:srcCompat="@drawable/builder" />
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/login1"
+        tools:ignore="MissingConstraints" />
+
 
     <TextView
         android:id="@+id/textView"
@@ -131,36 +132,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.515" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6"
-        app:srcCompat="@drawable/kolomwarna" />
 
     <Button
         android:id="@+id/btnu"
         android:layout_width="185dp"
-        android:layout_height="38dp"
+        android:layout_height="40dp"
         android:backgroundTint="#586F92"
         android:fontFamily="@font/poppins_semibold"
         android:inputType="textCapWords"
-        android:onClick="Loginu"
-        android:text="Log in as user"
+        android:text="Login"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
+        app:layout_constraintVertical_bias="0.602" />
 
     <ImageView
         android:id="@+id/imageView56"
@@ -171,27 +160,8 @@
         app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693"
+        app:layout_constraintVertical_bias="0.603"
         app:srcCompat="@drawable/kolomwarna" />
-
-    <Button
-        android:id="@+id/buttonw"
-        android:layout_width="183dp"
-        android:layout_height="40dp"
-        android:backgroundTint="#586F92"
-        android:fontFamily="@font/poppins_semibold"
-        android:inputType="textCapWords"
-        android:onClick="Loginw"
-        android:text="Log in as worker"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -202,7 +172,7 @@
         app:layout_constraintHorizontal_bias="0.739"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.843"
+        app:layout_constraintVertical_bias="0.763"
         app:srcCompat="@drawable/garis" />
 
     <ImageView
@@ -211,10 +181,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintHorizontal_bias="0.237"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.842"
+        app:layout_constraintVertical_bias="0.761"
         app:srcCompat="@drawable/garis" />
 
     <TextView
@@ -233,7 +203,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.854" />
+        app:layout_constraintVertical_bias="0.769" />
 
     <ImageView
         android:id="@+id/imageView21"
@@ -260,10 +230,10 @@
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.991" />
+        app:layout_constraintVertical_bias="0.903" />
 
     <Button
         android:id="@+id/registerTukang"
@@ -278,8 +248,10 @@
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_changePassword" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_changePassword"
+        app:layout_constraintVertical_bias="0.321" />
 
     <Button
         android:id="@+id/btn_changePassword"
@@ -295,10 +267,10 @@
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786" />
+        app:layout_constraintVertical_bias="0.708" />
 
     <ImageView
         android:id="@+id/imageView18"

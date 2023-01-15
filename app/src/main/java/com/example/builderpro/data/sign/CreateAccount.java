@@ -1,14 +1,14 @@
 package com.example.builderpro.data.sign;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.builderpro.HomeUser;
 import com.example.builderpro.HomeWorker;
@@ -46,7 +46,6 @@ public class CreateAccount extends AppCompatActivity {
         editEmail = findViewById(R.id.email);
         editPassword = findViewById(R.id.password);
         btnLoginUser = findViewById(R.id.btnu);
-        btnLoginWorker = findViewById(R.id.buttonw);
         btnRegister = findViewById(R.id.btnreg);
         register = findViewById(R.id.registerTukang);
         change = findViewById(R.id.btn_changePassword);
@@ -74,13 +73,6 @@ public class CreateAccount extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Silahkan isi semua data", Toast.LENGTH_SHORT).show();
             }
         });
-        btnLoginWorker.setOnClickListener(v -> {
-            if (editEmail.getText().length() > 0 && editPassword.getText().length() > 0){
-                login(editEmail.getText().toString(), editPassword.getText().toString());
-            }else{
-                Toast.makeText(getApplicationContext(), "Silahkan Isi Semua Data", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
     private void login(String email, String password) {
         progressDialog.show();
@@ -103,13 +95,15 @@ public class CreateAccount extends AppCompatActivity {
 
     private void reload() {
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser != null) {
+        if (currentUser != null){
             authenticationRepository.getUserByEmail(currentUser.getEmail(), new AuthenticationDataSource.UserCallback() {
                 @Override
                 public void success(User success) {
-                    if (success.is_tukang) {
-                    } else {
-                        startActivity(new Intent(getApplicationContext(), HomeUser.class));
+                    if (success.is_tukang){
+                        startActivity(new Intent(getApplicationContext(),  HomeWorker.class));
+
+                    }else{
+                        startActivity(new Intent(getApplicationContext(),  HomeUser.class));
                     }
                 }
                 @Override
@@ -117,6 +111,7 @@ public class CreateAccount extends AppCompatActivity {
                 }
             });
         }
+
     }
     @Override
     public void onStart() {

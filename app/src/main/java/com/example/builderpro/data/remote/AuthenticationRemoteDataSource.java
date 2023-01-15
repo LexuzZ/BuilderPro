@@ -1,12 +1,10 @@
 package com.example.builderpro.data.remote;
 
-import android.net.wifi.hotspot2.pps.Credential;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 
 import com.example.builderpro.data.interfaceDataSource.AuthenticationDataSource;
-import com.example.builderpro.data.model.Layanan;
 import com.example.builderpro.data.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -15,13 +13,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class AuthenticationRemoteDataSource implements AuthenticationDataSource {
     private FirebaseAuth mAuth;
@@ -65,6 +60,39 @@ public class AuthenticationRemoteDataSource implements AuthenticationDataSource 
             }
         });
     }
+    public void registerTukang(User user, String password, String type, AuthenticationCallback callback) {
+        mAuth.createUserWithEmailAndPassword(user.email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+                    FirebaseUser firebaseUser = task.getResult().getUser();
+                    if (firebaseUser != null) {
+                        Map<String, Object> adduser = new HashMap<>();
+                        adduser.put("nama", user.nama);
+                        // put("Alamat", user.alamat);
+                        // put("no.hp", "");
+                        adduser.put("email", user.email);
+                        adduser.put("type", type);
+                        db.collection("user").add(adduser);
+                        UserProfileChangeRequest request = new UserProfileChangeRequest.Builder()
+                                .setDisplayName(user.nama)
+                                .build();
+                        firebaseUser.updateProfile(request).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                callback.success(true);
+                            }
+                        });
+                    } else {
+                        callback.error(new Throwable("Register Gagal"));
+                    }
+                } else {
+                    callback.error(new Throwable(task.getException().getLocalizedMessage()));
+                }
+            }
+        });
+    }
+
 
     public void getUserByEmail(String email, UserCallback callback) {
 

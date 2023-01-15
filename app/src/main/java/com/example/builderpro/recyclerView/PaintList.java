@@ -1,15 +1,16 @@
 package com.example.builderpro.recyclerView;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.ImageButton;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.os.Bundle;
-import android.widget.ImageButton;
 
 import com.example.builderpro.HomeUser;
 import com.example.builderpro.R;
@@ -63,6 +64,7 @@ public class PaintList extends AppCompatActivity {
         database.child("Tukang").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Log.e("TW", "DSDS");
                 listTukang = new ArrayList<>();
                 for(DataSnapshot item : snapshot.getChildren()){
                     Tukang tkg = item.getValue(Tukang.class);
