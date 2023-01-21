@@ -108,7 +108,7 @@ public class AdapterTukang extends RecyclerView.Adapter<AdapterTukang.MyViewHold
         return tList.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView tv_tukang, tv_harga, tv_date, tv_action, tv_ahli, tv_rate;
         ImageView btn_hapus;
         CardView card_hasil;

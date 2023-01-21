@@ -28,7 +28,7 @@
             android:layout_marginRight="15dp"
             android:layout_marginBottom="15dp"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/tv_tukang"
@@ -36,8 +36,9 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="Nama Tukang"
+                android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textStyle="bold">
 
             </TextView>
@@ -47,9 +48,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
+                android:fontFamily="@font/poppins_semibold"
                 android:text="Harga Tukang"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textStyle="bold">
 
             </TextView>
@@ -60,8 +62,9 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="Kecamatan"
+                android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textStyle="bold">
             </TextView>
 
@@ -69,10 +72,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Keahlian"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:id="@+id/tv_ahli"
+                android:fontFamily="@font/poppins_semibold"
                 android:padding="5dp">
             </TextView>
 
@@ -82,7 +86,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Rating"
-                android:textSize="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="15dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:padding="5dp"
@@ -95,8 +100,9 @@
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Tersedia"
+                android:fontFamily="sans-serif"
                 android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textSize="12dp"
                 android:textStyle="italic">
 
             </TextView>

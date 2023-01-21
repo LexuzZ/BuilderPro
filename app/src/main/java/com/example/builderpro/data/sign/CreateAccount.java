@@ -101,7 +101,6 @@ public class CreateAccount extends AppCompatActivity {
                 public void success(User success) {
                     if (success.is_tukang){
                         startActivity(new Intent(getApplicationContext(),  HomeWorker.class));
-
                     }else{
                         startActivity(new Intent(getApplicationContext(),  HomeUser.class));
                     }

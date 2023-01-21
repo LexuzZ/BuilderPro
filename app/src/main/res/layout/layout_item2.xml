@@ -32,8 +32,9 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="Nama Tukang"
+            android:fontFamily="@font/poppins_semibold"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textStyle="bold">
 
         </TextView>
@@ -44,8 +45,9 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="Harga Tukang"
+            android:fontFamily="@font/poppins_semibold"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textStyle="bold">
 
         </TextView>
@@ -57,7 +59,8 @@
             android:padding="5dp"
             android:text="Kecamatan"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="15dp"
             android:textStyle="bold">
         </TextView>
 
@@ -65,7 +68,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Keahlian"
-            android:textSize="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="15dp"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:id="@+id/tv_ahli"
@@ -78,7 +82,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Rating"
-            android:textSize="20dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_semibold"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:padding="5dp"
@@ -93,7 +98,7 @@
             android:padding="5dp"
             android:text="Tersedia"
             android:textColor="@color/black"
-            android:textSize="15dp"
+            android:textSize="12dp"
             android:textStyle="italic">
 
         </TextView>
