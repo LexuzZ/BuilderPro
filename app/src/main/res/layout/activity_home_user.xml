@@ -23,6 +23,7 @@
             android:layout_height="119dp"
             android:layout_marginLeft="130dp"
             android:layout_marginTop="20dp"
+            android:onClick="locCust"
             android:src="@drawable/ic_user">
 
         </ImageView>
@@ -58,27 +59,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/animation_view1"
-            android:layout_width="60dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="524dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.74"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/form"
-            tools:ignore="MissingConstraints" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/animation_view"
-            android:layout_width="60dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="528dp"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="524dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.256"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:lottie_autoPlay="true"
@@ -112,20 +100,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="500dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="140dp"
         android:backgroundTint="#CCCCCC"
         android:onClick="buy"
         app:srcCompat="@drawable/homeframe" />
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="500dp"
-        android:layout_marginLeft="220dp"
-        android:backgroundTint="#CCCCCC"
-        android:onClick="buy"
-        app:srcCompat="@drawable/homeframe" />
 
 
     <TextView
@@ -133,7 +112,7 @@
         android:layout_width="77dp"
         android:layout_height="30dp"
        android:layout_marginTop="580dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="170dp"
         android:fontFamily="@font/poppins_semibold"
         android:gravity="center"
         android:text="List Tukang"
@@ -141,18 +120,7 @@
         android:textSize="12dp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="77dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="570dp"
-        android:layout_marginLeft="250dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center"
-        android:text="Form Customer"
-        android:textColor="#586F92"
-        android:textSize="12dp"
-        android:textStyle="bold" />
+
 
 
     <RelativeLayout

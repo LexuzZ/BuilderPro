@@ -1,5 +1,6 @@
 package com.example.builderpro;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -30,6 +31,7 @@ public class FormUser extends AppCompatActivity {
     DatabaseReference database = FirebaseDatabase.getInstance().getReference();
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +45,7 @@ public class FormUser extends AppCompatActivity {
             }
         });
 
-        dataTampil = findViewById(R.id.data_tampil);
+        dataTampil = findViewById(R.id.data_customer);
         RecyclerView.LayoutManager mLayout = new LinearLayoutManager(this);
         dataTampil.setLayoutManager(mLayout);
         dataTampil.setItemAnimator(new DefaultItemAnimator());

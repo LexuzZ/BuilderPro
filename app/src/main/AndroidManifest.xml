@@ -15,6 +15,13 @@
         android:theme="@style/Theme.BuilderPro"
         tools:targetApi="31">
         <activity
+            android:name=".TambahUser"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".FormUser"
             android:exported="false">
             <meta-data

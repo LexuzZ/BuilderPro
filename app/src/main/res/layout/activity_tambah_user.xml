@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ccc"
+    tools:context=".recyclerView.TambahActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#586F92">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_menu" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name : "
+        android:fontFamily="@font/poppins_semibold"
+        android:importantForAutofill="no"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address : "
+        android:fontFamily="@font/poppins_semibold"
+        android:inputType="numberDecimal"
+        android:importantForAutofill="no"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp">
+    </EditText>
+
+
+
+    <EditText
+        android:id="@+id/loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="District : "
+        android:fontFamily="@font/poppins_semibold"
+        android:importantForAutofill="no"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/ahli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City : "
+        android:fontFamily="@font/poppins_semibold"
+        android:importantForAutofill="no"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Postal : "
+        android:inputType="numberDecimal"
+        android:fontFamily="@font/poppins_semibold"
+        android:importantForAutofill="no"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp">
+    </EditText>
+
+
+    <Button
+        android:id="@+id/simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#586F92"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tambah"
+        android:textSize="15dp">
+    </Button>
+
+</LinearLayout>

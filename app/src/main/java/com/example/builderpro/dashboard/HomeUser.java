@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.builderpro.FormUser;
 import com.example.builderpro.Location;
 import com.example.builderpro.R;
 import com.example.builderpro.SettingUser;
@@ -46,6 +47,7 @@ public class HomeUser extends AppCompatActivity {
     public void buy(View view){
         Intent intent = new Intent(HomeUser.this, Location.class);
         startActivity(intent);
+
     }
     public void buyc(View view){
         Intent intent = new Intent(HomeUser.this, Location.class);
@@ -57,6 +59,10 @@ public class HomeUser extends AppCompatActivity {
     }
     public void buyt (View view){
         Intent intent = new Intent(HomeUser.this, Location.class);
+        startActivity(intent);
+    }
+    public void locCust(View view){
+        Intent intent = new Intent(HomeUser.this, FormUser.class);
         startActivity(intent);
     }
 
