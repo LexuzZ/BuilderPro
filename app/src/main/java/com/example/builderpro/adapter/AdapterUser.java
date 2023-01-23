@@ -62,7 +62,6 @@ public class AdapterUser extends RecyclerView.Adapter<AdapterUser.MyViewHolder> 
                 activity.startActivity(intent);
             }
         });
-
     }
 
     @Override
@@ -71,7 +70,7 @@ public class AdapterUser extends RecyclerView.Adapter<AdapterUser.MyViewHolder> 
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        CardView card_tukang;
+        CardView card_tukang, card_profile;
         TextView tv_tukang, tv_harga, tv_date, tv_ahli, tv_rate, tv_action;
 
         public MyViewHolder(@NonNull View itemView) {

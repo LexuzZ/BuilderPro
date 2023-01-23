@@ -55,7 +55,6 @@
         android:layout_height="wrap_content"
         android:hint="Address : "
         android:fontFamily="@font/poppins_semibold"
-        android:inputType="numberDecimal"
         android:importantForAutofill="no"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"

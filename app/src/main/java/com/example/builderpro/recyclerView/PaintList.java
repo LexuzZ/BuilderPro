@@ -3,7 +3,6 @@ package com.example.builderpro.recyclerView;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
@@ -12,10 +11,10 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.builderpro.dashboard.HomeUser;
 import com.example.builderpro.R;
 import com.example.builderpro.SettingUser;
 import com.example.builderpro.adapter.AdapterUser;
+import com.example.builderpro.dashboard.HomeUser;
 import com.example.builderpro.data.model.Tukang;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -64,7 +63,6 @@ public class PaintList extends AppCompatActivity {
         database.child("Tukang").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Log.e("TW", "DSDS");
                 listTukang = new ArrayList<>();
                 for(DataSnapshot item : snapshot.getChildren()){
                     Tukang tkg = item.getValue(Tukang.class);

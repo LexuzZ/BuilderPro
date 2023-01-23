@@ -1,7 +1,5 @@
 package com.example.builderpro.data.model;
 
-import java.util.Date;
-
 public class Tukang {
     private String nama;
     private String harga;
@@ -10,6 +8,7 @@ public class Tukang {
     private String rate;
     private String loc;
     private String key;
+
 
     public Tukang(){
 

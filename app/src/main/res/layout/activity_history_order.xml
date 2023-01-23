@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ccc"
-    tools:context=".FormUser">
+    tools:context=".HistoryOrder">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -42,21 +42,6 @@
         tools:listitem="@layout/layout_user">
 
     </androidx.recyclerview.widget.RecyclerView>
-
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_tambah"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="20dp"
-        android:layout_marginRight="20dp"
-        android:backgroundTint="#FF03DAC5"
-        app:srcCompat="@drawable/add">
-
-    </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
 
 
 </RelativeLayout>

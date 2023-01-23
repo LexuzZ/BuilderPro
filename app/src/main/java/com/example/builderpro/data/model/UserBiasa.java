@@ -8,6 +8,10 @@ public class UserBiasa {
     public String kodepos;
     public String key;
 
+    public UserBiasa(){
+
+    }
+
     public UserBiasa(String username, String alamat, String district, String city, String kodepos) {
         this.username = username;
         this.alamat = alamat;
@@ -16,13 +20,7 @@ public class UserBiasa {
         this.kodepos = kodepos;
     }
 
-    public String getKey() {
-        return key;
-    }
 
-    public void setKey(String key) {
-        this.key = key;
-    }
 
     public String getUsername() {
         return username;
@@ -63,6 +61,15 @@ public class UserBiasa {
     public void setKodepos(String kodepos) {
         this.kodepos = kodepos;
     }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 }
+
 
 

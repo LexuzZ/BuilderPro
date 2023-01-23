@@ -1,6 +1,8 @@
 package com.example.builderpro.adapter;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.builderpro.R;
 import com.example.builderpro.data.model.UserBiasa;
+import com.example.builderpro.order.CekOrder;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -38,13 +41,25 @@ public class AdapterProfile extends RecyclerView.Adapter<AdapterProfile.MyViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AdapterProfile.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull AdapterProfile.MyViewHolder holder, @SuppressLint("RecyclerView") int position) {
         final UserBiasa data = tList.get(position);
         holder.cust.setText("Customer : " + data.getUsername());
         holder.address.setText("Address : " + data.getAlamat());
         holder.district.setText("District : " + data.getDistrict());
         holder.city.setText("City : " + data.getCity());
         holder.postal.setText("Postal : " + data.getKodepos());
+        holder.cardProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(activity, CekOrder.class);
+                in.putExtra("Customers", tList.get(position).getUsername());
+//                in.putExtra("Alamat", tList.get(position).getAlamat());
+//                in.putExtra("District", tList.get(position).getDistrict());
+//                in.putExtra("City", tList.get(position).getCity());
+//                in.putExtra("Postal", tList.get(position).getKodepos());
+                activity.startActivity(in);
+            }
+        });
 
     }
 

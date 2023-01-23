@@ -1,15 +1,12 @@
 package com.example.builderpro;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.builderpro.data.sign.MainActivity;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.builderpro.data.sign.CreateAccount;
 import com.google.firebase.auth.FirebaseAuth;
 
 
@@ -23,7 +20,7 @@ public class Password extends AppCompatActivity {
 
     }
     public void repeat (View view){
-        Intent intent = new Intent(Password.this, MainActivity.class);
+        Intent intent = new Intent(Password.this, CreateAccount.class);
         startActivity(intent);
     }
 }

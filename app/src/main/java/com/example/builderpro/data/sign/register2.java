@@ -1,7 +1,5 @@
 package com.example.builderpro.data.sign;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,8 +7,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.builderpro.dashboard.HomeUser;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.builderpro.R;
+import com.example.builderpro.dashboard.HomeUser;
 import com.example.builderpro.data.interfaceDataSource.AuthenticationDataSource;
 import com.example.builderpro.data.model.Alamat;
 import com.example.builderpro.data.model.User;
@@ -82,9 +82,9 @@ public class register2 extends AppCompatActivity {
 
     }
 
-    private void reload() {
-       startActivity(new Intent(getApplicationContext(), MainActivity.class));
-   }
+ //   private void reload() {
+  //     startActivity(new Intent(getApplicationContext(), MainActivity.class));
+  // }
 
 //    @Override
 //    public void onStart() {

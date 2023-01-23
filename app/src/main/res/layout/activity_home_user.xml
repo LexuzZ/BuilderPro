@@ -23,7 +23,6 @@
             android:layout_height="119dp"
             android:layout_marginLeft="130dp"
             android:layout_marginTop="20dp"
-            android:onClick="locCust"
             android:src="@drawable/ic_user">
 
         </ImageView>
@@ -55,26 +54,7 @@
 
     </RelativeLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/animation_view"
-            android:layout_width="70dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="524dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/list"
-            tools:ignore="MissingConstraints" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -92,6 +72,10 @@
             android:text="What do you need?"
             android:textColor="#586F92"
             android:textSize="15dp" />
+
+
+
+
 
     </RelativeLayout>
 
@@ -120,7 +104,26 @@
         android:textSize="12dp"
         android:textStyle="bold" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="164dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/list"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <RelativeLayout
@@ -135,9 +138,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
-            android:layout_centerVertical="true"
             android:layout_marginLeft="30dp"
             android:background="@null"
+            android:onClick="locCust"
             android:src="@drawable/ic_history" />
 
 

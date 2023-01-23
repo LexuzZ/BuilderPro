@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="#ccc"
     android:orientation="vertical"
     tools:context=".HomeOrder">
 
@@ -34,17 +34,55 @@
             android:src="@drawable/ic_menu" />
 
     </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Halaman Checkout"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="#fff">
+
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_cust"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Customer"
+            android:layout_margin="15dp"
+            android:background="#fff"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="676dp"
-        app:cardBackgroundColor="#ccc">
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ccc"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="15dp">
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:layout_marginTop="30dp"
+            android:background="#ccc"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_tukang"
@@ -53,8 +91,9 @@
                 android:background="#E0FFFF"
                 android:padding="5dp"
                 android:text="Nama Tukang"
+                android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textStyle="bold">
 
             </TextView>
@@ -66,8 +105,9 @@
                 android:background="#E0FFFF"
                 android:padding="5dp"
                 android:text="Harga Tukang"
+                android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textStyle="bold">
 
             </TextView>
@@ -79,8 +119,9 @@
                 android:background="#E0FFFF"
                 android:padding="5dp"
                 android:text="Kecamatan"
+                android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textStyle="bold"></TextView>
 
             <TextView
@@ -90,8 +131,9 @@
                 android:background="#E0FFFF"
                 android:padding="5dp"
                 android:text="Keahlian"
+                android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textStyle="bold"></TextView>
 
 
@@ -102,8 +144,9 @@
                 android:background="#E0FFFF"
                 android:padding="5dp"
                 android:text="Rating"
+                android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textStyle="bold" />
 
 
@@ -113,35 +156,25 @@
                 android:layout_height="wrap_content"
                 android:background="#E0FFFF"
                 android:gravity="center"
-                android:padding="5dp"
+                android:padding="10dp"
                 android:text="Tersedia"
                 android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textSize="10dp"
                 android:textStyle="italic">
 
             </TextView>
 
-            <Button
-                android:id="@+id/btn_order"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:backgroundTint="#586F92"
-                android:inputType="textCapWords"
-                android:text="Order"
-                android:textStyle="bold"></Button>
 
         </LinearLayout>
 
-
-
-
     </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#586F92"
+        android:inputType="textCapWords"
+        android:text="Order"
+        android:textStyle="bold"></Button>
 </LinearLayout>
