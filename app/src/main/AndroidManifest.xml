@@ -14,10 +14,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BuilderPro"
         tools:targetApi="31">
-        <activity android:name=".HistoryOrder"
+        <activity
+            android:name=".LihatPesanan"
             android:exported="false">
-            <meta-data android:name="android.app.lib_name"
-                android:value=""/>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".HistoryOrder"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
         <activity
             android:name=".TambahUser"
