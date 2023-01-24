@@ -35,6 +35,17 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="Halaman Check Order"
+        android:textSize="20dp"
+        android:backgroundTint="#40586F92"
+        android:textColor="#586F92"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="#fff"/>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -172,7 +183,7 @@
             android:id="@+id/imageView"
             android:layout_width="38dp"
             android:layout_height="35dp"
-            android:layout_marginBottom="504dp"
+            android:layout_marginBottom="332dp"
             android:background="#cccccc"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -184,7 +195,7 @@
             android:id="@+id/imageView1"
             android:layout_width="38dp"
             android:layout_height="35dp"
-            android:layout_marginBottom="504dp"
+            android:layout_marginBottom="332dp"
             android:background="#cccccc"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -196,13 +207,12 @@
             android:id="@+id/view1"
             android:layout_width="38dp"
             android:layout_height="35dp"
-            android:layout_marginBottom="504dp"
+            android:layout_marginBottom="328dp"
             android:background="#cccccc"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.171"
+            app:layout_constraintHorizontal_bias="0.184"
             app:layout_constraintStart_toStartOf="parent"
-
             app:srcCompat="@drawable/oke" />
 
         <TextView
@@ -264,6 +274,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#CCCCCC"
+            android:onClick="cek2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.939"

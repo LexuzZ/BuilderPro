@@ -36,11 +36,11 @@
     </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
+        android:gravity="center"
         android:text="Halaman Checkout"
         android:textSize="20dp"
-        android:layout_margin="5dp"
-        android:padding="5dp"
+        android:backgroundTint="#40586F92"
         android:textColor="@color/black"
         android:fontFamily="@font/poppins_semibold"
         android:background="#fff">
@@ -48,7 +48,9 @@
     </TextView>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#ccc"
+        android:layout_margin="15dp">
         <TextView
             android:id="@+id/tv_cust"
             android:layout_width="match_parent"
@@ -69,7 +71,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:cardBackgroundColor="#ccc"
         app:cardCornerRadius="12dp"
         app:cardElevation="8dp">
@@ -164,17 +166,19 @@
 
             </TextView>
 
+            <Button
+                android:id="@+id/btn_order"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#586F92"
+                android:inputType="textCapWords"
+                android:text="Order"
+                android:textStyle="bold"></Button>
+
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-    <Button
-        android:id="@+id/btn_order"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:backgroundTint="#586F92"
-        android:inputType="textCapWords"
-        android:text="Order"
-        android:textStyle="bold"></Button>
+
 </LinearLayout>
