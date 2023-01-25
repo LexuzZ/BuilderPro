@@ -23,7 +23,7 @@ import java.util.ArrayList;
 public class HistoryOrder extends AppCompatActivity {
     AdapterProfile adapterProfile;
     RecyclerView dataTampil;
-    ArrayList<UserBiasa> listCust;
+    ArrayList<UserBiasa> listCustomer;
     DatabaseReference database = FirebaseDatabase.getInstance().getReference();
     Button btn;
 
@@ -46,14 +46,14 @@ public class HistoryOrder extends AppCompatActivity {
         database.child("Customers").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                listCust = new ArrayList<>();
+                listCustomer = new ArrayList<>();
                 for(DataSnapshot item : snapshot.getChildren()){
                     UserBiasa ub = item.getValue(UserBiasa.class);
                     ub.setKey(item.getKey());
-                    listCust.add(ub);
+                    listCustomer.add(ub);
 
                 }
-                adapterProfile = new AdapterProfile(listCust, HistoryOrder.this);
+                adapterProfile = new AdapterProfile(listCustomer, HistoryOrder.this);
                 dataTampil.setAdapter(adapterProfile);
             }
 

@@ -31,8 +31,6 @@ public class LihatPesanan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lihat_pesanan);
         data_Tampil = findViewById(R.id.data_pesanan);
-
-
         RecyclerView.LayoutManager mLayout = new LinearLayoutManager(this);
         data_Tampil.setLayoutManager(mLayout);
         data_Tampil.setItemAnimator(new DefaultItemAnimator());

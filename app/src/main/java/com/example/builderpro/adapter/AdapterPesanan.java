@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.builderpro.R;
 import com.example.builderpro.data.model.UserBiasa;
+import com.example.builderpro.order.CekOrder;
 import com.example.builderpro.order.CekPesanan;
 
 import java.util.List;
@@ -22,10 +23,11 @@ public class AdapterPesanan extends RecyclerView.Adapter<AdapterPesanan.MyViewHo
     private List<UserBiasa> tList;
     private Activity activity;
 
-    public AdapterPesanan(List<UserBiasa>tList, Activity activity) {
+    public AdapterPesanan(List<UserBiasa> tList, Activity activity) {
         this.tList = tList;
         this.activity = activity;
     }
+
     @NonNull
     @Override
     public AdapterPesanan.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -43,37 +45,46 @@ public class AdapterPesanan extends RecyclerView.Adapter<AdapterPesanan.MyViewHo
         holder.district.setText("District : " + data.getDistrict());
         holder.city.setText("City : " + data.getCity());
         holder.postal.setText("Postal : " + data.getKodepos());
+
         holder.cardPesanan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(activity, CekPesanan.class);
+                Intent in = new Intent(activity, CekOrder.class);
                 in.putExtra("Customers", tList.get(position).getUsername());
                 activity.startActivity(in);
+            }
+        });
+        holder.cardPesanan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity, CekPesanan.class);
+                intent.putExtra("Customers", tList.get(position).getUsername());
+                activity.startActivity(intent);
             }
         });
 
     }
 
 
+    @Override
+    public int getItemCount() {
+        return tList.size();
+    }
 
-            @Override
-            public int getItemCount() {
-                return tList.size();
-            }
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        CardView cardPesanan;
+        TextView cust, address, district, city, postal;
 
-            public class MyViewHolder extends RecyclerView.ViewHolder {
-                CardView cardPesanan;
-                TextView cust, address, district, city, postal;
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+            cust = itemView.findViewById(R.id.tv_pcust);
+            address = itemView.findViewById(R.id.tv_paddress);
+            district = itemView.findViewById(R.id.tv_pdistrict);
+            city = itemView.findViewById(R.id.tv_pcity);
+            postal = itemView.findViewById(R.id.tv_ppostal);
+            cardPesanan = itemView.findViewById(R.id.card_pesanan);
 
-                public MyViewHolder(@NonNull View itemView) {
-                    super(itemView);
-                    cust = itemView.findViewById(R.id.tv_pcust);
-                    address = itemView.findViewById(R.id.tv_paddress);
-                    district = itemView.findViewById(R.id.tv_pdistrict);
-                    city = itemView.findViewById(R.id.tv_pcity);
-                    postal = itemView.findViewById(R.id.tv_ppostal);
-                    cardPesanan = itemView.findViewById(R.id.card_pesanan);
-                }
-
-            }
         }
+
+    }
+}

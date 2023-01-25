@@ -50,6 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ccc"
+        android:backgroundTint="#ccc"
         android:layout_margin="15dp">
         <TextView
             android:id="@+id/tv_cust"
